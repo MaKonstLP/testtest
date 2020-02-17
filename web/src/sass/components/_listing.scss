@@ -122,11 +122,6 @@
                     flex-wrap: wrap;
                     margin-top: 5px;
 
-                    &:last-child {
-                        margin-left: auto;
-                        border: red;
-                    }
-
                     .item_meta_item{
                         padding: 0px 30px 0px 0px;
                         margin: 10px 0px 0px;
@@ -146,6 +141,10 @@
                         }
 
                         .item_meta_text{                            
+                        }
+
+                        &:last-child {
+                            margin-left: auto;
                         }
                     }
                 }
