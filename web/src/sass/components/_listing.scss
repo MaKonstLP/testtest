@@ -122,6 +122,11 @@
                     flex-wrap: wrap;
                     margin-top: 5px;
 
+                    &:last-child {
+                        margin-left: auto;
+                        border: red;
+                    }
+
                     .item_meta_item{
                         padding: 0px 30px 0px 0px;
                         margin: 10px 0px 0px;
@@ -130,7 +135,6 @@
                         font-size: 12px;
                         line-height: 15px;
                         white-space: nowrap;
-                        border: solid blue;
 
                         @include for-mobile{
                             padding: 0px;
@@ -139,7 +143,6 @@
 
                         .item_meta_label{
                             color: $clrTextInactive;
-                            border: solid red;
                         }
 
                         .item_meta_text{                            
