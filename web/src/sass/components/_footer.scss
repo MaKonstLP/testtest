@@ -54,10 +54,11 @@ footer{
                     }
 
                     .footer_logo_img{
-                        width: 135px;
-                        height: 57px;
-                        background-image: url(/img/svadba_logo.svg);
+                        width: 253px;
+                        height: 38px;
+                        background-image: url(/img/ny_logo.svg);
                         background-size: contain;
+                        background-repeat: no-repeat;
                         filter: hue-rotate(0deg);
                         transition: filter 0.2s ease;
                     }

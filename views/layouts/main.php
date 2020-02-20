@@ -65,7 +65,7 @@ AppAsset::register($this);
                             <div class="footer_logo_img"></div>
                         </a>
                         <div class="footer_info">
-                            <p class="footer_copy">© <?php echo date("Y");?> Свадьба на природе</p>
+                            <p class="footer_copy">© <?php echo date("Y");?> Новогодний корпоратив</p>
                             <a href="#" class="footer_pc _link">Политика конфиденциальности</a>
                         </div>                        
                     </div>
