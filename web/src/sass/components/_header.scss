@@ -37,9 +37,9 @@ header{
             }
 
             .header_logo_img{
-                width: 194px;
-                height: 82px;
-                background-image: url(/img/svadba_logo.svg);
+                width: 253px;
+                height: 55px;
+                background-image: url(/img/ny_logo.svg);
                 background-size: contain;
                 filter: hue-rotate(0deg);
                 transition: filter 0.2s ease;
@@ -126,20 +126,11 @@ header{
                     display: none;
                 }
 
-                &:after,
-                &:before{
-                    content: '';
-                    position: absolute;
-                    top: 4px;
-                    left: 0px;
-                    width: 17px;
-                    height: 17px;
-                    border: 2px solid $clrPagination;
-                    border-radius: 50%;
-                }
-
-                &:before{
-                    left: 9px;
+                .header_phone_button_img{
+                    width: 20px;
+                    height: 23px;
+                    background: url("/img/ny_ball.svg");
+                    background-size: contain;
                 }
 
                 & > p{
