@@ -42,7 +42,8 @@ AppAsset::register($this);
                 <div class="header_phone">
                     <p>(846) 205-78-45</p>
                     <div class="header_phone_button">
-                        <p class="_link">Подберите мне зал для свадьбы</p>
+                        <div class="header_phone_button_img"></div>
+                        <p class="_link">Подберите мне зал</p>
                     </div>
                 </div>
                 <div class="header_burger">
@@ -74,7 +75,7 @@ AppAsset::register($this);
                             <p>Тел.: (846) 205-78-45</p>
                         </div>
                         <div class="footer_phone_button">
-                            <p class="_link">Подберите мне зал для свадьбы</p>
+                            <p class="_link">Подберите мне зал</p>
                         </div>
                     </div>
                 </div>
