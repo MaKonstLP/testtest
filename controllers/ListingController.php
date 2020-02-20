@@ -5,11 +5,11 @@ use Yii;
 use yii\web\Controller;
 use common\models\GorkoApi;
 
-use common\pmnetwork\controllers\ListingController as BaseListingController;
+use common\pmnetwork\controllers\ListingControllerStudios as BaseListingController;
 
 class ListingController extends BaseListingController
 {
-
+  protected $per_page = 12;
 }
 
 //class ListingController extends Controller

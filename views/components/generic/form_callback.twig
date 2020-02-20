@@ -1,0 +1,53 @@
+<div class="form_wrapper callback">
+
+  <div class="form_title">
+		<p class="form_title_main">Не можете выбрать?</p>
+		<p class="form_title_desc">Заполните форму, мы свяжемся с вами и поможем подобрать лучшую площадку для новогоднего праздника.</p>
+	</div>
+
+  <form class="form_block" action="/ajax/form">
+
+    <div class="form_inputs">
+    
+      <div class="input_wrapper">
+        <div class="input_label">Как Вас зовут</div>
+        <input type="text" name="name" data-required/>
+      </div>
+      <div class="input_wrapper">
+        <div class="input_label">Номер телефона</div>
+        <input type="text" name="phone" data-required/>
+      </div>
+      <div class="input_wrapper">
+        <div class="input_label">Вопрос</div>
+        <textarea name="question" data-required></textarea>
+      </div>
+      <div class="input_wrapper">
+        <div class="input_label">Бюджет</div>
+        <input type="text" name="budget" data-required/>
+      </div>
+      <div class="input_wrapper">
+        <div class="input_label">Эл. почта</div>
+        <input type="text" name="email" data-required/>
+      </div>
+      <div class="input_wrapper">
+        <div class="input_label">Дата</div>
+        <input type="text" name="date" data-required/>
+      </div>
+      <div class="input_wrapper">
+        <div class="input_label">Число гостей</div>
+        <input type="text" name="guests_number" data-required/>
+      </div>
+
+    </div>
+
+    <div class="form_submit_callback">
+			<button class="_button" type="submit">Отправить</button>
+			<div class="form_policy checkbox_item" data-action="form_checkbox">
+				<input type="checkbox" name="policy" class="personalData" checked="">
+				<p class="checkbox_pseudo">Я согласен с <a class="_link">политикой обработки персональных данных</a></p>
+			</div>
+		</div>
+
+  </form>
+
+</div>

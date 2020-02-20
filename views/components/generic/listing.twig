@@ -2,6 +2,11 @@
 	<a href="/catalog/{{item.id}}/" class="item swiper-slide {{type}}">
         <div class="item_img">
             <img src="{{item.cover_url}}" alt="{{img_alt | replace({"{название}" : item.name})}}"/>
+
+            <div class="item_date-availability">
+                <span>Свободно 12 декабря</span>
+            </div>
+
         </div>
         <div class="item_info">
             <div class="item_info_top">
@@ -29,6 +34,19 @@
 
                 </div>
             </div>
+        </div>
+        <div class="item_additional-info">
+
+            <div class="item_gift-for-early-reservation">
+                <img class="" src="/img/gift.svg" alt="подарок">
+                <span>Подарок за бронирование</span>
+            </div>
+
+            <div class="item_fireworks-availability">
+                <img src="/img/firework.svg" alt="фейерверк">
+                <span>Возможность фейерверка</span>
+            </div>
+
         </div>
     </a>
 {% endfor %}

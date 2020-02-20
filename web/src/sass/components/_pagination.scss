@@ -9,37 +9,32 @@
     }
 
     .items_pagination_item{
-        width: 35px;
-        height: 35px;
+        width: 36px;
+        height: 45px;
         position: relative;
-        transform: rotate(45deg);
-        border: 3px solid $clrPagination;
+        background-image: url("/img/pagination_ny_img.svg");
         margin: 0px 13px;
         cursor: pointer;
 
         @include for-mobile{
-            width: 30px;
-            height: 30px;
-            margin: 0 11px;
+            margin: 0 10px;
         }
 
         &._first{
             margin-right: 26px;
             &:before{
                 content: '...';
-                transform: rotate(-45deg);
                 position: absolute;
-                left: calc(100% + 4px);
-                bottom: 34px;
-                color: $clrGreen;
+                left: calc(100% + 14px);
+                bottom: 13px;
+                color: #666666;
                 font-weight: 500;
                 font-size: 16px;
 
                 @include for-mobile{
-                    left: calc(100% + 3px);
-                    bottom: 30px;
+                    left: calc(100% + 12px);
+                    bottom: 13px;
                 }
-
             }
         }
 
@@ -47,13 +42,17 @@
             margin-left: 26px;
             &:before{
                 content: '...';
-                transform: rotate(-45deg);
                 position: absolute;
-                right: calc(100% + 8px);
-                bottom: -18px;
-                color: $clrGreen;
+                right: calc(100% + 14px);
+                bottom: 13px;
+                color: #666666;
                 font-weight: 500;
                 font-size: 16px;
+
+                @include for-mobile{
+                    right: calc(100% + 13px);
+                    bottom: 13px;
+                }
             }
         }
 
@@ -63,15 +62,15 @@
 
         &:hover,
         &._active{
-            background-color: $clrPagination;
+            background-image: url("/img/pagination_ny_active_img.svg");
         }
 
         &:after{
             content: attr(data-page-id);
             position: absolute;
-            transform: rotate(-45deg);
+            top: 15px;
             width: 100%;
-            line-height: 30px;
+            line-height: 26px;
             font-size: 16px;
             font-weight: 500;
             text-align: center;
@@ -80,6 +79,13 @@
             @include for-mobile{
                 line-height: 25px;
                 font-size: 14px;
+            }
+        }
+
+        &:hover,
+        &._active{
+            &:after{
+                color: #D83603;
             }
         }
     }

@@ -19,6 +19,12 @@
 		</div>
 	</div>
 
+	<div class="content_block"> 
+		<div data-pagination-wrapper>
+			{{pagination | raw }}
+		</div>
+	</div>
+
 	<div class="items_list_listing" data-listing-wrapper>
 		<div class="items_list" data-listing-list>
 
@@ -39,6 +45,12 @@
 			<div class="seo_text_control" data-seo-control>
 				<p class="_link">Показать полностью</p>
 			</div>
+		</div>
+	</div>
+
+	<div class="content_block form_callback_wrapper"> 
+		<div >
+			{{ this.render('//components/generic/form_callback.twig') | raw }}
 		</div>
 	</div>
 

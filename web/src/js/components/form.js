@@ -7,7 +7,7 @@ var animation = new Animation;
 export default class Form {
 	constructor(form) {
 		this.$form = $(form);
-		this.$formWrap = this.$form.parents('.formWrap');
+		this.$formWrap = this.$form.parents('.form_wrapper');
 		this.$submitButton = this.$form.find('button[type="submit"]');
 		this.$policy = this.$form.find('[name="policy"]');
 		this.to = (this.$form.attr('action') == undefined || this.$form.attr('action') == '') ? this.to : this.$form.attr('action');
@@ -51,7 +51,7 @@ export default class Form {
 		this.$form.on('click', 'button.disabled', function(e) {
 			e.preventDefault();
 			return false;
-		})
+		});
 
 		this.$policy.on('click',(e) => {
 			var $el = $(e.currentTarget);
@@ -62,14 +62,16 @@ export default class Form {
 			$el.addClass('_invalid');
 
 			this.checkValid();
-		})
+		});
 
 		$('[data-action="form_checkbox"]').on('click',(e) => {
 			let $el = $(e.currentTarget);
 			let $input = $el.siblings('input');
 
+			$el.toggleClass("_active");
 			$input.prop("checked", !$input.prop("checked"));
-		})
+		});
+
 	}
 
 	checkValid() {
